@@ -57,7 +57,7 @@ const useChat = () => {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer [OPENAI KEY]",
+                    "Authorization": "Bearer INSERT_OPEN_AI_KEY",
                 },
                 body: JSON.stringify({
                     model: "gpt-4o-mini",
@@ -96,7 +96,7 @@ const useChat = () => {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer [groq api key]",
+                    "Authorization": "Bearer INSERT_GROQ_KEY",
                 },
                 body: JSON.stringify({
                     model: "llama-3.3-70b-versatile",
