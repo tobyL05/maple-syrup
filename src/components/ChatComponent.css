@@ -41,8 +41,8 @@
 #crx-root #chat-container {
     width: 100%;
     height: 30rem;
-    border: 1px solid #FF6554;
-    border-radius: 2rem;
+    border: 2px solid #972929;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     background-color: #FFFDF7;
@@ -75,12 +75,19 @@
 
 #crx-root #inputField {
     width: 100%;
+    height: 2rem;
+    border-radius: 2rem;
 }
 
 #crx-root #submitButton {
     width: 30%;
     height: 2rem;
     margin-left: 1rem;
+    color: #FFFDF7;
+    background-color: #C14037;
+    font-family: "Geist", serif;
+    font-weight: bold;
+    border-radius: 2rem;
 }
 
 #crx-root .bunnyface {
@@ -89,4 +96,37 @@
 
 #crx-root .final{
     margin: 1rem;
+    background-color: #C14037;
+    color: #FFFDF7;
+    border-radius: 2rem;
+    width: 30%;
+    height: 2rem;
 }
+
+#crx-root #cancel{
+    margin: 1rem;
+    background-color: #C14037;
+    color: #FFFDF7;
+    border-radius: 2rem;
+    width: 30%;
+    height: 2rem;
+    font-family: "Geist", serif;
+    font-weight: bold;
+}
+
+#crx-root .logo-container {
+    position: fixed; /* Fixed position relative to the viewport */
+    right: 5px; /* 10px from the right edge */
+    bottom: 5px; /* 10px from the bottom edge */
+    z-index: 10000; /* Higher than other elements to ensure visibility */
+}
+
+#crx-root .logo-container img {
+    width: 50px;  /* Adjust this value as needed */
+    height: auto; /* This will maintain the aspect ratio */
+}
+
+
+
+
+
