@@ -6,11 +6,16 @@
     "permissions": ["storage", "activeTab", "scripting"],
     "content_scripts": [
         {
-            "matches": ["https://arcteryx.com/ca/en/cart","https://www.amazon.ca/gp/cart/view.html?ref_=nav_cart", "https://www.aritzia.com/en/cart", ]
+            "matches": ["https://arcteryx.com/ca/en/cart","https://www.amazon.ca/gp/cart/view.html?ref_=nav_cart", "https://www.aritzia.com/en/cart"],
             "js": ["./src/scripts/ChatOverlay.tsx"]
         }
     ],
     "background": {
         "service_worker": "./src/scripts/background.ts"
-    }
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
   }
