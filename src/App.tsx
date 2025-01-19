@@ -12,9 +12,7 @@ function App() {
 
   return (
     <div className={""}>
-        <h1 className="text-2xl font-bold">Maple Syrup</h1>
-        <h2 className="text-lg font-semibold">Save money when you shop online</h2>
-        <BudgetSaver />
+        <h1 className="text-2xl font-bold">Maple Syrup is on!</h1>
     </div>
   )
 }
