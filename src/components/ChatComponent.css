@@ -89,6 +89,7 @@
     font-family: "Geist", serif;
     font-weight: bold;
     border-radius: 2rem;
+    cursor: pointer;
 }
 
 #crx-root .bunnyface {
@@ -113,6 +114,7 @@
     height: 2rem;
     font-family: "Geist", serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #crx-root .logo-container {

@@ -1,10 +1,11 @@
 import useChat from "@/hooks/useChat";
 import "./ChatComponent.css"
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 
 export default function ChatComponent() {
 
+    const buttonRef = useRef<HTMLButtonElement>(null);
     const [userMessage, setUserMessage] = useState("");
     const { messages, messageAreaRef, sendMessage, verdict } = useChat();
     const [visible, setVisible] = useState(true);
@@ -85,12 +86,12 @@ export default function ChatComponent() {
                                 </svg>
 
                                 <div className="input-area">
-                                    <input type="text" id="inputField" placeholder="Convince me..." onChange={(e) => setUserMessage(e.target.value)} value={userMessage} autoComplete="off" />
-                                    <button id="submitButton" onClick={() => handleSend()} >Send</button>
+                                    <input type="text" id="inputField" placeholder="Convince me..." onChange={(e) => setUserMessage(e.target.value)} value={userMessage} autoComplete="off" onKeyDown={(e) => {if (e.key === "Enter") {buttonRef.current.click()}}}/>
+                                    <button id="submitButton" onClick={() => handleSend()} ref={buttonRef} >Send</button>
                                 </div>
                             </div>
                         </div>}
-                        {verdict === "BUY" ? <button className="final" onClick={() => { setVisible(false) }}>buy it!!!</button> : 
+                        {verdict === "BUY" ? <button className="final" onClick={() => {setVisible(false)}}>buy it!!!</button> : 
                             verdict === "DONT BUY" ? <button className="final" onClick={() => { window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }}>don't buy it!</button> :
                                 <button id="cancel" onClick={() => history.back()}>Cancel</button>}   
                     </div>
