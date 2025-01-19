@@ -71,3 +71,17 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+.geist-text {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geist-header {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

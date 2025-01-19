@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+#crx-root .maple-chat-overlay {
+    position: fixed; /* Fix it to the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: 9999; /* Ensure it's on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#crx-root .maple-chat-window {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%; /* Adjust the width as needed */
+    text-align: center;
+}
+
+#crx-root .maple-chat-window-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    color: #C14037;
+    font-family: "Geist", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#crx-root #chat-container {
+    width: 100%;
+    height: 30rem;
+    border: 1px solid #FF6554;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFDF7;
+    align-items: center;
+}
+
+#crx-root #message-area {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 1rem;
+}
+
+#crx-root #message-input {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#crx-root .input-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#crx-root #inputField {
+    width: 100%;
+}
+
+#crx-root #submitButton {
+    width: 30%;
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+#crx-root .bunnyface {
+    margin-right: 1rem;
+}
+
+#crx-root .final{
+    margin: 1rem;
+}

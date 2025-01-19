@@ -1,7 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "CRXJS React Vite Example",
+    "name": "Maple Syrup",
     "version": "1.0.0",
     "action": { "default_popup": "index.html" },
-    "permissions": ["storage"]
+    "permissions": ["storage", "activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["https://arcteryx.com/ca/en/cart","https://www.amazon.ca/gp/cart/view.html?ref_=nav_cart", "https://www.aritzia.com/en/cart", ]
+            "js": ["./src/scripts/ChatOverlay.tsx"]
+        }
+    ],
+    "background": {
+        "service_worker": "./src/scripts/background.ts"
+    }
   }
