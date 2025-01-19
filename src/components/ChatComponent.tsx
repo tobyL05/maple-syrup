@@ -85,7 +85,7 @@ export default function ChatComponent() {
                                 </svg>
 
                                 <div className="input-area">
-                                    <input type="text" id="inputField" placeholder="Type a message..." onChange={(e) => setUserMessage(e.target.value)} value={userMessage} autoComplete="off" />
+                                    <input type="text" id="inputField" placeholder="Convince me..." onChange={(e) => setUserMessage(e.target.value)} value={userMessage} autoComplete="off" />
                                     <button id="submitButton" onClick={() => handleSend()} >Send</button>
                                 </div>
                             </div>
